@@ -4,9 +4,9 @@
 #include<vector>
 
 //Implementation is based off paper 
-//Grace Sharing Userspace RCU, Nov 19,2014
-//by Cisco Systems & Concurrency Freaks
-//1.4230/LIPIcs.CVIT.2016.23
+//Grace Sharing Userspace RCU
+//by Pedro Ramalhete and Andereia Correia
+//DOI: 1.4230/LIPIcs.CVIT.2016.23
 
 class RCUManager{
 private:
