@@ -2,6 +2,7 @@
 #include<cinttypes>
 #include<atomic>
 #include<vector>
+#include<limits>
 
 //Implementation is based off paper 
 //Grace Sharing Userspace RCU
@@ -40,6 +41,7 @@ private:
       }
 
       std::runtime_error("RCUManager: Failed to find a free mutex");
+      return std::numeric_limits<size_t>::max();
     }
 
     inline void unassign(size_t idx){
