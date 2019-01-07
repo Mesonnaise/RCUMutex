@@ -11,7 +11,7 @@
 class RCUManager{
 private:
   //Each of the counters needs to sit on a different cache line
-  //to avoid having multiable counters from invaliding 
+  //to avoid having multiable counters invalidating
   //the same cache line when updated.
   //zen=64bytes,intel=128bytes
   static constexpr int      ALIGNMENT =64;
