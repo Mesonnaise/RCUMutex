@@ -73,7 +73,7 @@ int main(){
 
   std::vector<std::thread> sharedThreads;
 
-  for(int i=0;i<totalThreads-1;i++)
+  for(unsigned int i=0;i<totalThreads-1;i++)
     sharedThreads.emplace_back(read,std::ref(res),i);
 
   std::thread w1(write,std::ref(res));
